@@ -1,0 +1,16 @@
+@use "../abstract/variable" as var;
+.btn {
+    padding: 0.8rem 1.6rem;
+    background-color: map-get(var.$theme-color,"primary");
+    border-radius: 6px;
+    line-height: 1;
+    font-size: 0.98rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+    &:hover{
+        color: map-get(var.$theme-color,'primary-hover');
+    }
+}

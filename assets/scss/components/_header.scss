@@ -1,0 +1,29 @@
+@use "../abstract/variable" as var;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem;
+  border-bottom: 1px solid #eee;
+  &--menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    &--item {
+      margin-right: 1.5rem;
+      font-size: 14px;
+      font-weight: 600;
+      a {
+        color: #242424;
+        &:hover {
+          color: map-get(var.$theme-color, "primary");
+        }
+        &.active{
+          color: map-get(var.$theme-color, "primary");
+        }
+      }
+    }
+  }
+}
