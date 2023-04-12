@@ -11,6 +11,18 @@
     color: #fff;
     display: inline-block;
     &:hover{
-        color: map-get(var.$theme-color,'primary-hover');
+        background-color: map-get(var.$theme-color,'primary-hover');
+        color: #fff;
     }
+    &--outline{
+        @extend .btn;
+        background-color: #fff;
+        border: 2px solid map-get($theme-color, "primary");
+        color: map-get($theme-color, "primary");
+        &:hover{
+            background-color: map-get(var.$theme-color,'primary-hover');
+            color: #fff;
+        }
+    }
+
 }

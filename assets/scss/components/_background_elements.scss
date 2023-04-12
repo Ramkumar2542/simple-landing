@@ -1,0 +1,111 @@
+.background-shapes {
+  .box1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #3f43fd;
+    border-radius: 0.35rem;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .box2 {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #3f43fd;
+    border-radius: 0.35rem;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .box3 {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #3f43fd;
+    border-radius: 0.35rem;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .dot1 {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    width: 8px;
+    height: 8px;
+    background-color: #3f43fd;
+    border-radius: 50%;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .dot2 {
+    position: absolute;
+    top: 77%;
+    left: 90%;
+    width: 8px;
+    height: 8px;
+    background-color:#f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .dot3 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 8px;
+    height: 8px;
+    background-color:#f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .heart1{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 51%;
+    left: 13%;
+    z-index: -1;
+    color:#f4284a;
+    animation: box-shape linear 5s infinite;
+  }
+  .heart2{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    z-index: -1;
+    color:#f4284a;
+    animation: box-shape linear 5s infinite;
+  }
+  .circle1 {
+    position: absolute;
+    bottom: 80%;
+    left: 21%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+  .circle2 {
+    position: absolute;
+    top: 24%;
+    left: 52%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    z-index: -1;
+    animation: box-shape linear 5s infinite;
+  }
+}

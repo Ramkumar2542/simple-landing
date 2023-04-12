@@ -1,0 +1,7 @@
+@use "../abstract/variable" as var;
+.badge {
+    padding: 0px 10px;
+    background-color: map-get(var.$theme-color,"primary");
+    color: #fff;
+    border-radius: 10px;
+}

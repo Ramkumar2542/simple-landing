@@ -8,6 +8,10 @@
   animation: color-change 10s infinite;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,6 +32,14 @@ a {
   }
   100% {
     color: green;
+  }
+}
+@keyframes box-shape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .header {
@@ -59,7 +71,117 @@ a {
   color: #3f43fd;
 }
 
-.btn {
+.background-shapes .box1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .box2 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .box3 {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot1 {
+  position: absolute;
+  top: 77%;
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  background-color: #3f43fd;
+  border-radius: 50%;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot2 {
+  position: absolute;
+  top: 77%;
+  left: 90%;
+  width: 8px;
+  height: 8px;
+  background-color: #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot3 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 8px;
+  height: 8px;
+  background-color: #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .heart1 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 51%;
+  left: 13%;
+  z-index: -1;
+  color: #f4284a;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .heart2 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: 8%;
+  z-index: -1;
+  color: #f4284a;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .circle1 {
+  position: absolute;
+  bottom: 80%;
+  left: 21%;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .circle2 {
+  position: absolute;
+  top: 24%;
+  left: 52%;
+  width: 15px;
+  height: 15px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  z-index: -1;
+  animation: box-shape linear 5s infinite;
+}
+
+.btn, .btn--outline {
   padding: 0.8rem 1.6rem;
   background-color: #3f43fd;
   border-radius: 6px;
@@ -71,8 +193,45 @@ a {
   color: #fff;
   display: inline-block;
 }
-.btn:hover {
-  color: #3135e8;
+.btn:hover, .btn--outline:hover {
+  background-color: #3135e8;
+  color: #fff;
+}
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid #3f43fd;
+  color: #3f43fd;
+}
+.btn--outline:hover {
+  background-color: #3135e8;
+  color: #fff;
+}
+
+.badge {
+  padding: 0px 10px;
+  background-color: #3f43fd;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero-area {
+  padding: 8rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-area--content {
+  max-width: 34rem;
+}
+.hero-area--title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hero-area--desc {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  line-height: 1.8;
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
