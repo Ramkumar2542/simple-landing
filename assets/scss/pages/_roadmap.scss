@@ -1,0 +1,99 @@
+@use "../abstract/variable" as var;
+.roadmap {
+    padding: 8rem 20rem;
+    &--title {
+        text-align: center;
+    }
+    &--content {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--item{
+            padding: 3rem 1rem;
+            text-align: center;
+            max-width: 350px;
+            position: relative;
+            cursor: pointer;
+            filter: grayscale(100%);
+            transition: 500ms;
+            margin-left: 4rem;
+            &:hover &--img::after{
+                animation: rotate-infinite 4000ms linear infinite;
+            }
+            &--img {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                img{
+                    width: 60px;
+                    margin-top:25px;
+                }
+                &::after {
+                    position: absolute;
+                    top:0;
+                    left: -5px;
+                    content:"";
+                    width: 100%;
+                    height: 100%;
+                    border: 5px dotted;
+                    border-radius: 50%;
+
+                }
+            }
+            &--desc{
+                margin-top: 2rem;
+                h5 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                p{
+                    color: gray;
+                    line-height: 1.5;
+                }
+            }
+            &:not(:last-child):before {
+                position: absolute;
+                top: 35%;
+                right: -10%;
+                content: "\f054";
+                width: 70px;
+                height: 70px;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 1;
+                z-index: 1;
+            }
+            &:hover:last-child:after {
+                transition: 500ms;
+                position: absolute;
+                top: 35%;
+                right: -30%;
+                content: "😊 👍";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 1;
+                z-index: 1;
+                color: yellow;
+                
+            }
+            &:hover {
+                filter: grayscale(0%);
+            }
+            &:hover:not(:last-child):before {
+                right: -32%;
+                color: map-get(var.$theme-color, "primary" );
+                transition: 500ms;
+            }
+            &:hover h5{
+                color: map-get(var.$theme-color, "primary" );
+            }
+            &:hover &--img::after{
+                color: map-get(var.$theme-color, "primary" );
+            }
+        }
+    }
+}

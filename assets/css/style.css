@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 .font-ta {
   font-family: "Mukta Malar", sans-serif;
@@ -10,6 +11,14 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.line {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+  margin: auto;
 }
 
 * {
@@ -35,6 +44,14 @@ a {
   }
 }
 @keyframes box-shape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-infinite {
   0% {
     transform: rotate(0deg);
   }
@@ -240,7 +257,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 11rem;
 }
 .about--img {
   max-width: 32rem;
@@ -260,6 +276,103 @@ a {
 }
 .about--desc--content a:hover {
   text-shadow: 10px 10px 10px black;
+}
+
+.roadmap {
+  padding: 8rem 20rem;
+}
+.roadmap--title {
+  text-align: center;
+}
+.roadmap--content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap--content--item {
+  padding: 3rem 1rem;
+  text-align: center;
+  max-width: 350px;
+  position: relative;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 500ms;
+  margin-left: 4rem;
+}
+.roadmap--content--item:hover .roadmap--content--item--img::after {
+  animation: rotate-infinite 4000ms linear infinite;
+}
+.roadmap--content--item--img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.roadmap--content--item--img img {
+  width: 60px;
+  margin-top: 25px;
+}
+.roadmap--content--item--img::after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px dotted;
+  border-radius: 50%;
+}
+.roadmap--content--item--desc {
+  margin-top: 2rem;
+}
+.roadmap--content--item--desc h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.roadmap--content--item--desc p {
+  color: gray;
+  line-height: 1.5;
+}
+.roadmap--content--item:not(:last-child):before {
+  position: absolute;
+  top: 35%;
+  right: -10%;
+  content: "\f054";
+  width: 70px;
+  height: 70px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  z-index: 1;
+}
+.roadmap--content--item:hover:last-child:after {
+  transition: 500ms;
+  position: absolute;
+  top: 35%;
+  right: -30%;
+  content: "😊 👍";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  z-index: 1;
+  color: yellow;
+}
+.roadmap--content--item:hover {
+  filter: grayscale(0%);
+}
+.roadmap--content--item:hover:not(:last-child):before {
+  right: -32%;
+  color: #3f43fd;
+  transition: 500ms;
+}
+.roadmap--content--item:hover h5 {
+  color: #3f43fd;
+}
+.roadmap--content--item:hover .roadmap--content--item--img::after {
+  color: #3f43fd;
 }
 
 /*# sourceMappingURL=style.css.map */

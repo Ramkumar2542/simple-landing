@@ -9,3 +9,10 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.line {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+  margin: auto;
+}
