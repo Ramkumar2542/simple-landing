@@ -234,4 +234,32 @@ a {
   color: gray;
 }
 
+.about {
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+}
+.about--img {
+  max-width: 32rem;
+}
+.about--desc {
+  color: #fff;
+  margin-left: 5rem;
+}
+.about--desc--title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.about--desc--content {
+  font-size: 1rem;
+  line-height: 2;
+  color: #cfcfcf;
+}
+.about--desc--content a:hover {
+  text-shadow: 10px 10px 10px black;
+}
+
 /*# sourceMappingURL=style.css.map */

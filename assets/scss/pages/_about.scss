@@ -1,0 +1,28 @@
+@use "../abstract/variable" as var;
+.about {
+    padding: 8rem 20rem;
+    background-color: map-get(var.$theme-color, "primary" );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11rem;
+    &--img{
+        max-width:32rem;
+    }
+    &--desc{
+        color: #fff;
+        margin-left: 5rem;
+        &--title{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        &--content{
+            font-size: 1rem;
+            line-height: 2;
+            color: #cfcfcf;
+            a:hover{
+                text-shadow: 10px 10px 10px black;
+            }
+        }
+    }
+}
