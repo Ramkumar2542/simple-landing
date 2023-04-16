@@ -1,0 +1,60 @@
+@use "../abstract/variable" as var;
+.courses {
+  padding: 8rem 20rem;
+  background-color: map-get(var.$theme-color, "primary");
+  &--title {
+    text-align: center;
+    margin-bottom: 5rem;
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+    p {
+      color: rgb(223, 223, 223);
+    }
+  }
+  &--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--item {
+      height: 100%;
+      max-width: 25rem;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      &:hover {
+        box-shadow: 2px 2px 20px 5px rgba(27, 27, 27, 0.664);
+        transition: 500ms;
+      }
+      a{
+        color: rgba(0,0,0,0.938);
+      }
+      &--img {
+        img {
+          width: 25rem;
+        }
+      }
+
+      &--text {
+        padding: 2rem;
+        p {
+          color: gray;
+          padding-top: 1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .courses--content--link {
+    margin-top: 4rem;
+    text-align: center;
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover {
+        text-shadow: 2px 2px 10px #000;
+      }
+    }
+  }
+}

@@ -375,4 +375,61 @@ a {
   color: #3f43fd;
 }
 
+.courses {
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+}
+.courses--title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.courses--title h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.courses--title p {
+  color: rgb(223, 223, 223);
+}
+.courses--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses--content--item {
+  height: 100%;
+  max-width: 25rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.courses--content--item:hover {
+  box-shadow: 2px 2px 20px 5px rgba(27, 27, 27, 0.664);
+  transition: 500ms;
+}
+.courses--content--item a {
+  color: rgba(0, 0, 0, 0.938);
+}
+.courses--content--item--img img {
+  width: 25rem;
+}
+.courses--content--item--text {
+  padding: 2rem;
+}
+.courses--content--item--text p {
+  color: gray;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+.courses .courses--content--link {
+  margin-top: 4rem;
+  text-align: center;
+  color: #fff;
+}
+.courses .courses--content--link a {
+  color: #fff;
+}
+.courses .courses--content--link a:hover {
+  text-shadow: 2px 2px 10px #000;
+}
+
 /*# sourceMappingURL=style.css.map */
