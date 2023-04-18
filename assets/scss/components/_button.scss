@@ -10,6 +10,10 @@
     outline: none;
     color: #fff;
     display: inline-block;
+    &--primary {
+        @extend .btn;
+        background-color: map-get($theme-color, "primary");
+    }
     &:hover{
         background-color: map-get(var.$theme-color,'primary-hover');
         color: #fff;

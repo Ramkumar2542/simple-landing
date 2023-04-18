@@ -1,0 +1,16 @@
+@use "../abstract/variable" as var;
+.form-control {
+    padding: 0.8rem 1.5rem;
+    margin-top:2rem;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    &:focus {
+        border:2px solid map-get(var.$theme-color, "primary");
+    }
+}
+.resize-none {
+    resize: none;
+}
