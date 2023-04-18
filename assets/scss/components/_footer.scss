@@ -1,0 +1,17 @@
+@use "../abstract/variable" as var;
+.footer {
+    padding: 2rem 0;
+    background-color: map-get(var.$theme-color, "primary");
+    text-align: center;
+    color: #fff;
+    &--social > a > i {
+        transition: 500ms;
+        font-size: 1.5rem;
+        padding: 0 10px;
+        color:#1619a0;
+        &:hover {
+            color:rgb(224, 224, 224);
+        }
+        
+   }
+}

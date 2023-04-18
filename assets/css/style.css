@@ -88,6 +88,22 @@ a {
   color: #3f43fd;
 }
 
+.footer {
+  padding: 2rem 0;
+  background-color: #3f43fd;
+  text-align: center;
+  color: #fff;
+}
+.footer--social > a > i {
+  transition: 500ms;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: #1619a0;
+}
+.footer--social > a > i:hover {
+  color: rgb(224, 224, 224);
+}
+
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
