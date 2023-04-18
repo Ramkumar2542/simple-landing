@@ -8,13 +8,17 @@
 // Utilities
 @import './utilities/animation';
 
+// Layout
+@import "./layout/header";
+@import "./layout/footer";
+
 // Components
-@import "./components/header";
-@import "./components/footer";
+
 @import "./components/background_elements";
 @import "./components/button";
 @import "./components/badge";
 @import "./components/forms";
+
 
 
 //Pages
